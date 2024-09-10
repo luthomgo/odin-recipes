@@ -1,0 +1,55 @@
+<div class="registration_form">
+  <h1>Create your account</h1>
+  <form action="registration">
+    <!-- get email -->
+    <label for="email">Email</label>
+    <div>
+      <input
+        type="text"
+        name="email"
+        id="email"
+        minlength="5"
+        maxlength="100"
+        required
+      />
+    </div>
+    <!-- get name -->
+    <label for="Name">Full name</label>
+    <div>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        minlength="3"
+        maxlength="40"
+        required
+      />
+    </div>
+    <!-- get password -->
+    <label for="password">Password</label>
+    <div>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        minlength="3"
+        maxlength="40"
+        required
+      />
+    </div>
+    <!-- confirm password -->
+    <label for="confirm_password"> Confirm Password</label>
+    <div>
+      <input
+        type="password"
+        name="confirm_password"
+        id="confirm_password"
+        required
+      />
+    </div>
+
+    <button>Create account</button>
+  </form>
+
+  <p>Have an account? Sign in</p>
+</div>
