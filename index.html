@@ -10,29 +10,37 @@
 
   <body>
     <header class="header-container">
-      <nav class="header-items">
-        <ul>
-        <li class="home"><a href="index.html">Home</a></li>
-        <li class="login">Login</li>
-        <li class="signup"><a href="./registration_form.html">Sign Up</a></li>
+      <div class="dropdown-container">
+        <div class="icon">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
 
-        <form
-          action="https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch?"
-          autocomplete="on"
-          method="get"
-        >
-          <label for="query">Search:</label>
-          <input
-            type="text"
-            type="search"
-            id="query"
-            name="query"
-            placeholder="toast"
-          />
-          <input type="hidden" name="number" value="10" />
-          <!-- <button> Search</button> -->
-        </form>
-      </nav>
+        <nav class="header-items" id="dropdown-items">
+          <ul>
+            <li class="home"><a href="index.html">Home</a></li>
+
+            <li class="login">Login</li>
+            <li class="signup">
+              <a href="./registration_form.html">Sign Up</a>
+            </li>
+
+            <form id="search-form" action="" autocomplete="on" method="GET">
+              <label for="query">Search:</label>
+              <input
+                type="text"
+                type="search"
+                id="query"
+                name="query"
+                placeholder="toast"
+              />
+              <input type="hidden" name="number" value="10" />
+              <input type="submit" value="Search" />
+            </form>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <h1>Easy Recipes for Beginners</h1>
